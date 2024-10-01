@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guss the number game</title>
+    <script src="script.js" defer></script>
+
+    <style>
+        main {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h3 {
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+
+        #num {
+            width: 210px;
+            height: 30px;
+            border-radius: 8px;
+            border: 2px solid slategrey;
+            margin-bottom: 30px;
+        }
+        
+        button {
+            padding: 6px 10px;
+            margin: 0 4px 20px 4px;
+            border-radius: 6px;
+            border: none;
+            background-color: slategray;
+            font-size: 15px;
+            color: whitesmoke;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+
+        .results-box p {
+            font-size: 20px;
+        }
+
+        .results-box h4 {
+            font-size: 20px;
+        }
+
+         /* experienced code/logic  */
+        button:disabled{
+            cursor: not-allowed;
+            color: rgb(135, 151, 166);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <h3>guess the number between 1 to 100</h3>
+
+            <!-- my code -->
+            <!-- <input type="number" id="num">
+
+            <div class="btn-container">
+                <button class="submit-btn" type="submit">submit</button>
+                <button class="reset-btn start" type="reset">start new game</button>
+            </div> -->
+
+ <!-- experienced code/logic -->
+        <form>
+            <input type="number" id="num"  placeholder="enter a number" max="100" min="0" required>
+            <div class="btn-container">
+                <button class="submit-btn" type="submit">submit</button>
+                <button type="button" disabled class="reset-btn" type="reset">start new game</button>
+            </div>
+        </form>
+        
+        <div class="results-box">
+            <p class="result" </p>
+            <h4 class="your-guesses"> </h4>
+        </div>
+    </main>
+
+</body>
+
+</html>
